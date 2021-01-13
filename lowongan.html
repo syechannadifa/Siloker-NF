@@ -110,12 +110,41 @@
                   </nav>
                 </div>
                 <div class="col-12 mb-4">
+                  <div class="card d-flex flex-column justify-content-between mb-3" id="lowongan-tambah"
+                    style="display: none !important;">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <div class="mb-4">
+                          <h4 class="card-title mb-2" id="nama"></h4>
+                          <p class="text-muted mb-0" id="alamat"></p>
+                        </div>
+                        <div class="text-nowrap">
+                          <i class="mdi mdi-bookmark-outline h4"></i> &nbsp;
+                          <i class="mdi mdi-share-variant h4"></i>
+                        </div>
+                      </div>
+                      <h4 class="font-weight-light mb-2" id="kategori"></h4>
+                      <div class="d-md-flex justify-content-start mb-4">
+                        <div class="mr-4">
+                          <p class="text-primary mb-0"><i class="mdi mdi-clock-outline pr-1"></i> <span
+                              id="tanggal"></span></p>
+                        </div>
+                      </div>
+                      <p id="deskripsi"></p>
+                      <ul class="list-arrow">
+                        <a href="lowongan-3.html">
+                          <small>Lihat detail</small>
+                        </a>
+                    </div>
+                  </div>
                   <div class="card d-flex flex-column justify-content-between mb-3">
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-start">
                         <div class="mb-4">
                           <div class="d-flex flex-row">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs3GEWGWBARiPyFcTDhAB4OJOZxURL21ZqGnVx&s=0" class="img-sm border rounded" alt="profile image">
+                            <img
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs3GEWGWBARiPyFcTDhAB4OJOZxURL21ZqGnVx&s=0"
+                              class="img-sm border rounded" alt="profile image">
                             <div class="ml-3">
                               <h4 class="card-title mb-2">Stampindo Lancar Jaya PT</h4>
                               <p class="text-muted mb-0">Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta</p>
@@ -156,7 +185,9 @@
                       <div class="d-flex justify-content-between align-items-start">
                         <div class="mb-4">
                           <div class="d-flex flex-row">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13KYFFtdvWnM7Pbi98KICZ-DcFSQUrjtPVA&usqp=CAU" class="img-sm border rounded" alt="profile image">
+                            <img
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13KYFFtdvWnM7Pbi98KICZ-DcFSQUrjtPVA&usqp=CAU"
+                              class="img-sm border rounded" alt="profile image">
                             <div class="ml-3">
                               <h4 class="card-title mb-2">Tokopedia</h4>
                               <p class="text-muted mb-0">Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta</p>
@@ -178,7 +209,8 @@
                         </div>
                       </div>
                       <ul class="list-arrow">
-                        <li>Work with other creative and brand teams on concept development for ongoing and seasonal campaigns</li>
+                        <li>Work with other creative and brand teams on concept development for ongoing and seasonal
+                          campaigns</li>
                         <li>Accurately execute approved creative ideas</li>
                         <li>Ensure that all creative work meets the required standards and timelines</li>
                         <li>Ensure creative hygiene of creative work eg fonts, sizes, reproduction, finishing</li>
@@ -212,16 +244,16 @@
                   <h5 class="mb-3">Kategori Lowongan</h5>
                   <ul class="submenu-item list-unstyled">
                     <li class="nav-item">
-                      <a class="nav-link text-dark pl-0" href="#">Programmer</a>
+                      <a class="nav-link text-dark pl-0" href="lowongan.html">Programmer</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-dark pl-0" href="#">Information Technology</a>
+                      <a class="nav-link text-dark pl-0" href="lowongan.html">Network & Infrastructure</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-dark pl-0" href="#">Arts & Entertainment</a>
+                      <a class="nav-link text-dark pl-0" href="lowongan.html">Analys</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-dark pl-0" href="#">Research & Development</a>
+                      <a class="nav-link text-dark pl-0" href="lowongan.html">Data Science</a>
                     </li>
                   </ul>
                 </div>
@@ -262,6 +294,23 @@
   <script src="js/dashboard.js"></script>
   <script src="js/todolist.js"></script>
   <!-- End custom js for this page-->
+  <script>
+    if (localStorage.getItem("nama")) {
+      console.log(localStorage);
+      $('#lowongan-tambah').show();
+      $('#nama').text(localStorage.getItem('nama'));
+      $('#alamat').text(localStorage.getItem('alamat'));
+      $('#bidang').text(localStorage.getItem('bidang'));
+      $('#deskripsi').text(localStorage.getItem('deskripsi'));
+      $('#deskripsi_kualifikasi').text(localStorage.getItem('deskripsi_kualifikasi'));
+      $('#kategori').text(localStorage.getItem('kategori'));
+      $('#tanggal').text(localStorage.getItem('tanggal'));
+      $('#kontak').text(localStorage.getItem('kontak'));
+      $('#email').text(localStorage.getItem('email'));
+    } else {
+      $('#lowongan-tambah').hide();
+    }
+  </script>
 
 </body>
 
