@@ -3,19 +3,19 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SILOKERNF &#8211; Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>SILOKERNF &#8211; Form Menjadi Mitra</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css" />
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" />
     <!-- End plugin css for this page -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="css/horizontal-layout/style.css">
+    <link rel="stylesheet" href="css/horizontal-layout/style.css" />
     <script src="js/custom.js"></script>
     <!-- endinject -->
     <link rel="shortcut icon" href="images/favicon.png" />
@@ -38,8 +38,8 @@
                                             </span>
                                         </div>
                                         <input type="text" name="keyword" class="form-control" placeholder="Search"
-                                            aria-label="search" aria-describedby="search">
-                                        <input type="submit" style="display: none;">
+                                            aria-label="search" aria-describedby="search" />
+                                        <input type="submit" style="display: none" />
                                     </div>
                                 </form>
                             </li>
@@ -49,9 +49,7 @@
                         </div>
                         <ul class="navbar-nav ml-lg-5 navbar-nav-right">
                             <li class="nav-item">
-                                <a class="nav-link" href="login.html">
-                                    Login
-                                </a>
+                                <a class="nav-link" href="login.html"> Login </a>
                             </li>
                             <li class="nav-item nav-toggler-item-right d-lg-none">
                                 <button class="navbar-toggler align-self-center" type="button"
@@ -101,18 +99,36 @@
             <div class="main-panel">
                 <div class="content-wrapper">
                     <div class="row">
+                        <div class="col-12">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb bg-white">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="mitra.html">Daftar Mitra</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                        Form Menjadi Mitra
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
                         <div class="col-12 mb-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4>Login</h4>
-                                    <p class="card-description">Login sebagai Admin</p>
+                                    <h4>Form Menjadi Mitra</h4>
+                                    <p class="card-description">
+                                        Isi data perusahaan-mu dan gabung menjadi bagian dari
+                                        mitra kami.
+                                    </p>
                                     <form class="forms-sample" action="lowongan.html" id="form-lowongan" method="POST">
                                         <div class="form-group row">
                                             <label for="nama" class="col-sm-3 col-form-label">Nama
                                                 Perushaan/Organisasi</label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" id="nama" name="nama"
-                                                    placeholder="Nama Perushaan/Organisasi" required autofocus>
+                                                    placeholder="Nama Perushaan/Organisasi" required autofocus />
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -126,25 +142,24 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <!-- <div class="form-group row">
                                             <label for="deskripsi" class="col-sm-3 col-form-label">Deskripsi
                                                 Lowongan</label>
                                             <div class="col-sm-9">
                                                 <textarea class="form-control" id="deskripsi" name="deskripsi" rows="4"
                                                     required></textarea>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="form-group row">
-                                            <label for="alamat" class="col-sm-3 col-form-label">Alamat</label>
+                                            <label for="alamat" class="col-sm-3 col-form-label">Alamat Kantor</label>
                                             <div class="col-sm-9">
-                                                <textarea class="form-control" id="alamat" name="alamat" rows="4"
-                                                    required></textarea>
+                                                <textarea class="form-control" placeholder="Alamat Kantor" id="alamat"
+                                                    name="alamat" rows="4" required></textarea>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <!-- <div class="form-group row">
                                             <label for="deskripsi_kualifikasi" class="col-sm-3 col-form-label">Deskripsi
-                                                Kualifikasi
-                                                Lowongan</label>
+                                                Kualifikasi Lowongan</label>
                                             <div class="col-sm-9">
                                                 <textarea class="form-control" id="deskripsi_kualifikasi"
                                                     name="deskripsi_kualifikasi" rows="4"></textarea>
@@ -158,7 +173,7 @@
                                                     <label class="form-check-label">
                                                         <input type="checkbox" id="kategori" name="kategori[]"
                                                             value="Programmer" class="form-check-input kategori"
-                                                            required>
+                                                            required />
                                                         Programmer
                                                         <i class="input-helper"></i></label>
                                                 </div>
@@ -168,7 +183,7 @@
                                                     <label class="form-check-label">
                                                         <input type="checkbox" id="kategori" name="kategori[]"
                                                             value="Network & Infrastructure"
-                                                            class="form-check-input kategori" required>
+                                                            class="form-check-input kategori" required />
                                                         Network & Infrastructure
                                                         <i class="input-helper"></i></label>
                                                 </div>
@@ -177,7 +192,7 @@
                                                 <div class="form-check form-check-secondary">
                                                     <label class="form-check-label">
                                                         <input type="checkbox" id="kategori" name="kategori[]"
-                                                            value="Analys" class="form-check-input kategori">
+                                                            value="Analys" class="form-check-input kategori" />
                                                         Analys
                                                         <i class="input-helper"></i></label>
                                                 </div>
@@ -186,7 +201,7 @@
                                                 <div class="form-check form-check-secondary">
                                                     <label class="form-check-label">
                                                         <input type="checkbox" id="kategori" name="kategori[]"
-                                                            value="Data Science" class="form-check-input kategori">
+                                                            value="Data Science" class="form-check-input kategori" />
                                                         Data Science
                                                         <i class="input-helper"></i></label>
                                                 </div>
@@ -198,31 +213,48 @@
                                                 <div id="datepicker-popup" class="input-group date datepicker">
                                                     <input type="text" class="form-control" name="tanggal"
                                                         placeholder="mm/dd/yyyy" id="tanggal" autocomplete="off"
-                                                        required>
+                                                        required />
                                                     <span class="input-group-addon input-group-append border-left">
                                                         <span class="mdi mdi-calendar input-group-text"></span>
                                                     </span>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
+
                                         <div class="form-group row">
                                             <label for="kontak" class="col-sm-3 col-form-label">Kontak Person</label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" id="kontak" name="kontak"
-                                                    placeholder="Kontak Person" required>
+                                                    placeholder="Kontak Person" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="kontak" class="col-sm-3 col-form-label">No Hp / Telepon</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="kontak" name="kontak"
+                                                    placeholder="No Hp / Telepon" required />
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="email" class="col-sm-3 col-form-label">Email</label>
                                             <div class="col-sm-9">
                                                 <input type="email" class="form-control" id="email" name="email"
-                                                    placeholder="Email" required>
+                                                    placeholder="Email" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="email" class="col-sm-3 col-form-label">Alamat Web</label>
+                                            <div class="col-sm-9">
+                                                <input type="email" value="http://" class="form-control" id="email"
+                                                    name="email" placeholder="Alamat Web" required />
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-sm-9 offset-sm-3">
-                                                <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                                                <button class="btn btn-light">Reset</button>
+                                                <a href="mitra.html" class="btn btn-primary mr-2">
+                                                    Daftar
+                                                </a>
+                                                <a href="mitra.html" class="btn btn-light">Batal</a>
                                             </div>
                                         </div>
                                     </form>
@@ -266,34 +298,39 @@
     <!-- End custom js for this page-->
     <script>
         $(document).ready(function () {
-            $('#datepicker-popup').datepicker({
+            $("#datepicker-popup").datepicker({
                 enableOnReadonly: true,
                 todayHighlight: true,
-                format: 'DD, d MM yyyy'
+                format: "DD, d MM yyyy",
             });
 
             // Simpan ke local storage browser
-            $('.kategori').change(function () {
+            $(".kategori").change(function () {
                 var kategori = [];
                 $.each($("input[name='kategori[]']:checked"), function () {
                     kategori.push($(this).val());
                 });
                 kategori = kategori.join(", ");
-                localStorage.setItem('kategori', kategori);
+                localStorage.setItem("kategori", kategori);
             });
-            $('#form-lowongan').submit(function () {
-                localStorage.setItem('nama', $("input[name='nama']").val());
-                localStorage.setItem('alamat', $("textarea[name='alamat']").val());
-                localStorage.setItem('bidang', $("select[name='bidang']").val());
-                localStorage.setItem('deskripsi', $("textarea[name='deskripsi']").val());
-                localStorage.setItem('deskripsi_kualifikasi', $("textarea[name='deskripsi_kualifikasi']").val());
-                localStorage.setItem('tanggal', $("input[name='tanggal']").val());
-                localStorage.setItem('kontak', $("input[name='kontak']").val());
-                localStorage.setItem('email', $("input[name='email']").val());
+            $("#form-lowongan").submit(function () {
+                localStorage.setItem("nama", $("input[name='nama']").val());
+                localStorage.setItem("alamat", $("textarea[name='alamat']").val());
+                localStorage.setItem("bidang", $("select[name='bidang']").val());
+                localStorage.setItem(
+                    "deskripsi",
+                    $("textarea[name='deskripsi']").val()
+                );
+                localStorage.setItem(
+                    "deskripsi_kualifikasi",
+                    $("textarea[name='deskripsi_kualifikasi']").val()
+                );
+                localStorage.setItem("tanggal", $("input[name='tanggal']").val());
+                localStorage.setItem("kontak", $("input[name='kontak']").val());
+                localStorage.setItem("email", $("input[name='email']").val());
             });
         });
     </script>
-
 </body>
 
 </html>
