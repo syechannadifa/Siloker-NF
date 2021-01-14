@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>SILOKERNF &#8211; Form Menjadi Mitra</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/horizontal-layout/style.css" />
+    <script src="js/custom.js"></script>
+    <!-- endinject -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_horizontal-navbar.html -->
+        <div class="horizontal-menu">
+            <nav class="navbar top-navbar col-lg-12 col-12 p-0">
+                <div class="container">
+                    <div class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
+                        <ul class="navbar-nav mr-lg-2 d-none d-lg-flex">
+                            <li class="nav-item nav-search d-none d-lg-flex">
+                                <form action="search.html" method="get">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="search">
+                                                <i class="mdi mdi-magnify"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" name="keyword" class="form-control" placeholder="Search"
+                                            aria-label="search" aria-describedby="search" />
+                                        <input type="submit" style="display: none" />
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                            <h3 class="font-weight-bold text-white mb-0">SILOKERNF</h3>
+                        </div>
+                        <ul class="navbar-nav ml-lg-5 navbar-nav-right">
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html"> Login </a>
+                            </li>
+                            <li class="nav-item nav-toggler-item-right d-lg-none">
+                                <button class="navbar-toggler align-self-center" type="button"
+                                    data-toggle="horizontal-menu-toggle">
+                                    <span class="mdi mdi-menu"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="bottom-navbar">
+                <div class="container">
+                    <ul class="nav page-navigation">
+                        <li class="nav-item">
+                            <a class="nav-link h-100" href="index.html">
+                                <!-- <i class="mdi mdi-view-dashboard-outline menu-icon"></i> -->
+                                <span class="menu-title">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h-100" href="lowongan.html">
+                                <span class="menu-title">Lowongan Baru</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h-100" href="loker.html">
+                                <span class="menu-title">Isi Loker</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h-100" href="mitra.html">
+                                <span class="menu-title">Daftar Mitra</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h-100" href="berita.html">
+                                <span class="menu-title">Berita</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-12">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb bg-white">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="mitra.html">Daftar Mitra</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                        Form Edit Mitra
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Form Edit Mitra</h4>
+                                    <p class="card-description">
+                                        Isi data perusahaan-mu dan gabung menjadi bagian dari
+                                        mitra kami.
+                                    </p>
+                                    <form class="forms-sample" action="lowongan.html" id="form-lowongan" method="POST">
+                                        <div class="form-group row">
+                                            <label for="nama" class="col-sm-3 col-form-label">Nama
+                                                Perushaan/Organisasi</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="nama" name="nama"
+                                                    placeholder="Nama Perushaan/Organisasi" required autofocus />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="bidang" class="col-sm-3 col-form-label">Bidang Usaha</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control" id="bidang" name="bidang" required>
+                                                    <option value="">Pilih bidang usaha</option>
+                                                    <option value="Perbankan">Perbankan</option>
+                                                    <option value="Rumah Sakit">Rumah Sakit</option>
+                                                    <option value="BUMN">BUMN</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="alamat" class="col-sm-3 col-form-label">Alamat Kantor</label>
+                                            <div class="col-sm-9">
+                                                <textarea class="form-control" placeholder="Alamat Kantor" id="alamat"
+                                                    name="alamat" rows="4" required></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="kontak" class="col-sm-3 col-form-label">Kontak Person</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="kontak" name="kontak"
+                                                    placeholder="Kontak Person" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="kontak" class="col-sm-3 col-form-label">No Hp / Telepon</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="kontak" name="kontak"
+                                                    placeholder="No Hp / Telepon" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="email" class="col-sm-3 col-form-label">Email</label>
+                                            <div class="col-sm-9">
+                                                <input type="email" class="form-control" id="email" name="email"
+                                                    placeholder="Email" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="email" class="col-sm-3 col-form-label">Alamat Web</label>
+                                            <div class="col-sm-9">
+                                                <input type="email" value="http://" class="form-control" id="email"
+                                                    name="email" placeholder="Alamat Web" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-9 offset-sm-3">
+                                                <a href="mitra.html" class="btn btn-primary mr-2">
+                                                    Daftar
+                                                </a>
+                                                <a href="mitra.html" class="btn btn-light">Batal</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content-wrapper ends -->
+                <!-- partial:partials/_footer.html -->
+                <footer class="footer">
+                    <div class="w-100 clearfix">
+                        <span class="text-muted text-center text-sm-left">Develop by Mahasiswa STT-NF © 2021</span>
+                    </div>
+                </footer>
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+
+    <!-- plugins:js -->
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="vendors/chart.js/Chart.min.js"></script>
+    <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="js/dashboard.js"></script>
+    <script src="js/todolist.js"></script>
+    <!-- End custom js for this page-->
+    <script>
+        $(document).ready(function () {
+            $("#datepicker-popup").datepicker({
+                enableOnReadonly: true,
+                todayHighlight: true,
+                format: "DD, d MM yyyy",
+            });
+
+            // Simpan ke local storage browser
+            $(".kategori").change(function () {
+                var kategori = [];
+                $.each($("input[name='kategori[]']:checked"), function () {
+                    kategori.push($(this).val());
+                });
+                kategori = kategori.join(", ");
+                localStorage.setItem("kategori", kategori);
+            });
+            $("#form-lowongan").submit(function () {
+                localStorage.setItem("nama", $("input[name='nama']").val());
+                localStorage.setItem("alamat", $("textarea[name='alamat']").val());
+                localStorage.setItem("bidang", $("select[name='bidang']").val());
+                localStorage.setItem(
+                    "deskripsi",
+                    $("textarea[name='deskripsi']").val()
+                );
+                localStorage.setItem(
+                    "deskripsi_kualifikasi",
+                    $("textarea[name='deskripsi_kualifikasi']").val()
+                );
+                localStorage.setItem("tanggal", $("input[name='tanggal']").val());
+                localStorage.setItem("kontak", $("input[name='kontak']").val());
+                localStorage.setItem("email", $("input[name='email']").val());
+            });
+        });
+    </script>
+</body>
+
+</html>
