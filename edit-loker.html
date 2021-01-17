@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>SILOKERNF &#8211; Hasil Pencarian</title>
+  <title>SILOKERNF &#8211; Isi Loker</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
@@ -36,8 +36,8 @@
                         <i class="mdi mdi-magnify"></i>
                       </span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Search" aria-label="search"
-                    aria-describedby="search">
+                    <input type="text" name="keyword" class="form-control" placeholder="Search" aria-label="search"
+                      aria-describedby="search">
                     <input type="submit" style="display: none;">
                   </div>
                 </form>
@@ -99,51 +99,64 @@
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Isi Loker</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-12 mb-4">
               <div class="card">
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col-12">
-                      <form action="#">
-                        <div class="form-group d-flex">
-                          <input type="text" class="form-control" placeholder="Search Here" id="qval" value="">
-                          <button type="submit" class="btn btn-primary ml-3">Search</button>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="col-12 mb-5">
-                      <h2>Search Result For<u class="ml-2" id="teksqval"></u></h2>
-                      <p class="text-muted">About 12 results (0.52 seconds)</p>
-                    </div>
-                    <div class="col-12 results">
-                      <div class="pt-4 border-bottom">
-                        <a class="d-block h4 mb-0" href="#">Bootstrapdash</a>
-                        <a class="page-url text-primary" href="#">https://www.bootstrapdash.com/</a>
-                        <p class="page-description mt-1 w-75 text-muted">Bootstrapdash gives you
-                          the most beautiful, free and premium bootstrap admin dashboard
-                        templates and control panel themes based on Bootstrap 3 and 4.</p>
+                  <h4>Form Edit Loker</h4>
+                  <p class="card-description">Isi penawaran lowongan kerja Anda.</p>
+                  <form class="forms-sample">
+                    <div class="form-group row">
+                      <label for="nama" class="col-sm-3 col-form-label">Nama Perusahaan/Organisasi</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Perushaan/Organisasi">
                       </div>
                     </div>
-                    <div class="col-12 results">
-                      <div class="pt-4 border-bottom">
-                        <a class="d-block h4 mb-0" href="#">Bootstrapdash Team – Medium</a>
-                        <a class="page-url text-primary" href="#">https://medium.com/@bootstrapdash</a>
-                        <p class="page-description mt-1 w-75 text-muted">Read writing from
-                          Bootstrapdash Team on Medium. We design and develop awesome admin
-                          dashboard templates with Bootstrap, so you can kick-start and speed
-                        up your development. www.bootstrapdash.com.</p>
+                    <div class="form-group row">
+                      <label for="bidang" class="col-sm-3 col-form-label">Bidang Usaha</label>
+                      <div class="col-sm-9">
+                        <select class="form-control" id="bidang" name="bidang">
+                          <option value="">Pilih bidang usaha</option>
+                          <option value="Perbankan">Perbankan</option>
+                          <option value="Desain Grafis">Desain Grafis</option>
+                          <option value="Web Developer">Web Developer</option>
+                          <option value="Mobile Developer">Mobile Developer</option>
+                        </select>
                       </div>
                     </div>
-                    <nav class="col-12" aria-label="Page navigation">
-                      <ul class="pagination mt-5">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item  active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                      </ul>
-                    </nav>
-                  </div>
+                    <div class="form-group row">
+                      <label for="exampleInputMobile" class="col-sm-3 col-form-label">Mobile</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="exampleInputMobile" placeholder="Mobile number">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Password</label>
+                      <div class="col-sm-9">
+                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Re Password</label>
+                      <div class="col-sm-9">
+                        <input type="password" class="form-control" id="exampleInputConfirmPassword2"
+                          placeholder="Password">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-sm-9 offset-sm-3">
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <button class="btn btn-light">Reset</button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -182,12 +195,6 @@
   <script src="js/dashboard.js"></script>
   <script src="js/todolist.js"></script>
   <!-- End custom js for this page-->
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const q = urlParams.get('keyword');
-    document.getElementById('qval').value = q;
-    document.getElementById('teksqval').innerHTML = q;
-  </script>
 
 </body>
 
